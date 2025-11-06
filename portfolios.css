@@ -1,0 +1,94 @@
+/* Layout des projets */
+.projects {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+margin-top: 40px;
+}
+
+/* Chaque projet */
+.portfolio-item {
+background-color: #1e293b;
+border: 2px solid #334155;
+border-radius: 10px;
+padding: 15px;
+width: 250px;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img {
+  width: 75%;        /* prend la largeur du conteneur */
+  height: auto;       /* hauteur automatique pour garder les proportions */
+  border-radius: 10px; /* coins arrondis */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 0 auto;    /* centre l'image */
+}
+
+
+
+.portfolio-item h3 {
+color: #38bdf8;
+margin-bottom: 5px;
+}
+
+.portfolio-item p {
+color: #cbd5e1;
+font-size: 0.95rem;
+}
+
+.portfolio-item img :hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+/* Responsive pour mobile */
+@media (max-width: 700px) {
+.projects {
+flex-direction: column;
+align-items: center;
+}
+.portfolio-item2 {
+width: 90%;
+}
+}
+
+.portfolio-item2 {
+background-color: #1e293b;
+border: 2px solid #334155;
+border-radius: 10px;
+padding: 15px;
+width: 300px;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item2 img {
+  width: 125%;        /* prend la largeur du conteneur */
+  height: auto;       /* hauteur automatique pour garder les proportions */
+  border-radius: 10px; /* coins arrondis */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 0 auto;    /* centre l'image */
+}
+
+
+
+.portfolio-item2 h3 {
+color: #38bdf8;
+margin-bottom: 5px;
+}
+
+.portfolio-item2 p {
+color: #cbd5e1;
+font-size: 0.95rem;
+}
+
+.portfolio-item2 img :hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+

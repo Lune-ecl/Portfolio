@@ -1,0 +1,117 @@
+/* Reset et polices */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body et fond */
+body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #1e293b;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #334155;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.photo-profil {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #38bdf8;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+}
+
+/* Navigation */
+nav a {
+  color: #e2e8f0;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover {
+  color: #38bdf8;
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 3px;
+}
+
+/* Main / Galerie */
+main {
+  flex: 1;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 350px); /* colonnes plus larges */
+  grid-template-rows: repeat(2, auto);
+  gap: 40px; /* plus d’espace entre les images */
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; /* marge au-dessus */
+}
+
+.project-img {
+  width: 350px;       /* largeur plus grande */
+  height: auto;       /* hauteur automatique pour garder le ratio */
+  max-height: 300px;  /* hauteur maximale uniforme */
+  object-fit: contain; /* images non coupées */
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+}
+
+.principal-img {
+  width: 350px;      /* un peu plus petit */
+  height: auto;      /* garde le ratio */
+  border-radius: 14px;
+  object-fit: contain; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principal-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #1e293b;
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #334155;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
